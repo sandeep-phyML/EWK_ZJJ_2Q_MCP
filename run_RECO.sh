@@ -1,0 +1,13 @@
+cmsDriver.py step3 \
+--python_filename EWKZ2Jets_ZToQQ_RECO_cfg.py \
+--eventcontent AODSIM \
+--datatier AODSIM \
+--fileout file:EWKZ2Jets_ZToQQ_RECO.root \
+--conditions 124X_mcRun3_2022_realistic_postEE_v1 \
+--step RAW2DIGI,L1Reco,RECO,RECOSIM \
+--geometry DB:Extended \
+--filein file:EWKZ2Jets_ZToQQ_DIGI.root \
+--era Run3 \
+--no_exec \
+--mc \
+-n 100

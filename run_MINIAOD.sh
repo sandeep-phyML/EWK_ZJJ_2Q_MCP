@@ -1,0 +1,13 @@
+cmsDriver.py step4 \
+--python_filename EWKZ2Jets_ZToQQ_MINIAOD_cfg.py \
+--eventcontent MINIAODSIM \
+--datatier MINIAODSIM \
+--fileout file:EWKZ2Jets_ZToQQ_MINIAOD.root \
+--conditions 124X_mcRun3_2022_realistic_postEE_v1 \
+--step PAT \
+--geometry DB:Extended \
+--filein file:EWKZ2Jets_ZToQQ_RECO.root \
+--era Run3 \
+--no_exec \
+--mc \
+-n 100
