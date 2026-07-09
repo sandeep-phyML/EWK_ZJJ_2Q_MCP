@@ -6,7 +6,6 @@ cmsDriver.py Configuration/GenProduction/python/EWKZ2Jets_ZToQQ_GEN_fragment.py 
     --fileout file:EWKZ2Jets_ZToQQ_GENSIM.root \
     --conditions 124X_mcRun3_2022_realistic_postEE_v1 \
     --beamspot Realistic25ns13p6TeVEarly2022Collision \
-    --customise_commands "process.RandomNumberGeneratorService.externalLHEProducer.initialSeed=1" \
     --step LHE,GEN,SIM \
     --geometry DB:Extended \
     --era Run3 \
