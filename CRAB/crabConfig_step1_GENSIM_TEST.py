@@ -1,0 +1,20 @@
+from CRABClient.UserUtilities import config
+config = config()
+config.General.requestName = 'EWKZ2Jets_ZToQQ_GENSIM_test_v3_FNAL'
+config.General.workArea = 'crab_projects'
+config.General.transferOutputs = True
+config.General.transferLogs = True
+config.JobType.pluginName = 'PrivateMC'
+config.JobType.psetName = 'EWKZ2Jets_ZToQQ_GENSIM_cfg.py'
+config.JobType.inputFiles = ['/afs/cern.ch/user/s/sapradha/genproductions/genproductions_scripts/bin/MadGraph5_aMCatNLO/EWKZ2Jets_ZToQQ_el8_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz']
+config.JobType.maxMemoryMB = 2500
+config.JobType.numCores = 1
+config.Data.outputPrimaryDataset = 'EWKZ2Jets_ZToQQ_FNAL'
+config.Data.splitting = 'EventBased'
+config.Data.unitsPerJob = 100
+config.Data.totalUnits = 500
+config.Data.publication = True
+config.Data.outputDatasetTag = 'GENSIM_test_v3'
+#config.Data.outLFNDirBase = '/store/user/sapradha/PhD_Projects/VBF_analysis/Parton_Kinematic_Study/CMSSW_12_4_11_patch3/src/OUTPUT/'
+config.Data.outLFNDirBase = '/store/user/sapradha/VBFHBB/EWK_Z2Q/'
+config.Site.storageSite = 'T3_US_FNALLPC'
